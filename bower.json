@@ -1,0 +1,25 @@
+{
+  "name": "antlr4-javascript-cypher",
+  "version": "1.0.0",
+  "homepage": "https://github.com/bastiion/antlr4-javascript-cypher",
+  "authors": [
+    "Sebastian Tilsch"
+  ],
+  "description": "antlr4-javascript-cypher UMD module",
+  "main": "release/antlr4-cypher.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "grammars",
+    "lib"
+  ]
+}

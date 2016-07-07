@@ -1,0 +1,32 @@
+{
+  "name": "antlr4-javascript-cypher",
+  "version": "1.0.0",
+  "description": "antlr4-javascript-cypher UMD",
+  "scripts": {
+    "browserify": "node node_modules/browserify/bin/cmd.js --ignore-missing main.js -o release/antlr4-cypher.js",
+    "uglify": "node node_modules/uglify-js/bin/uglifyjs release/antlr4-cypher.js -o release/antlr4-cypher-min.js -m -c",
+    "build-cypher": "antlr4 -Dlanguage=JavaScript grammars/cypher/Cypher.g4 -o lib"
+  },
+  "main": "release/antlr4-cypher.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastiion/antlr4-javascript-cypher.git"
+  },
+  "keywords": [
+    "antlr4",
+    "umd"
+  ],
+  "author": "Sebastian Tilsch",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/bastiion/antlr4-javascript-cypher/issues"
+  },
+  "homepage": "https://github.com/bastiion/antlr4-javascript-cypher",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "uglify-js": "^2.7.0"
+  },
+  "dependencies": {
+    "antlr4": "^4.5.2"
+  }
+}
