@@ -28,7 +28,7 @@
     // only CommonJS-like environments that support module.exports,
     // like Node.
     //TODO this is not the UMD way, but for some reason it always detected module and exports in my scripts
-    root.returnExports = factory();
+    this.returnExports = factory();
     module.exports = root.returnExports;
   } else {
     // Browser globals (root is window)
