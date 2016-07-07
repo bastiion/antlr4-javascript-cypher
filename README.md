@@ -41,7 +41,7 @@ To build UMD module type:
 ```    
 #as normal user in the project directory
 npm install
-npm run uglify
+npm run browserify
 ```
 
 To minify:    
@@ -49,7 +49,7 @@ To minify:
 ```    
 #as normal user in the project directory
 npm install
-npm run browserify
+npm run uglify
 ```
 
 To use with webpack define following shim antlr4-cypher.js 
