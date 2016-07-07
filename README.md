@@ -18,7 +18,7 @@ For the generation of the javaScript lexer and parser there is a modification ne
 Classes have been generated with the following commands:
 
 ```
-java -Xmx500M -cp "antlr-4.5.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool -Dlanguage=JavaScript grammars/sql/Cypher.g4 -o lib
+java -Xmx500M -cp "antlr-4.5.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool -Dlanguage=JavaScript grammars/cypher/Cypher.g4 -o lib
 ```
 
 Or if antlr4 is in yout `$PATH` you can invoke
@@ -52,7 +52,7 @@ npm install
 npm run browserify
 ```
 
-To use with webpack define following shim antlr4-sql.js 
+To use with webpack define following shim antlr4-cypher.js 
 
 ```
 var antlr4 = require('antlr4-base');
